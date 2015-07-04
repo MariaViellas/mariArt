@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Efeito Parallax - Tutsup</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/scripts.js"></script>
+		<script>
+			$(function(){   
+			var nav = $('#menuHeader');   
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 150) { 
+					nav.addClass("menu-fixo"); 
+				} else { 
+					nav.removeClass("menu-fixo"); 
+				} 
+			});  
+		});
+		</script>
+	</head>
+	<body>
+		<nav id="menuHeader">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Minha hist&oacute;ria</a></li>
+				<li><a href="#">Desenhos</a></li>
+				<li><a href="#">Artesanatos</a></li>
+				<li><a href="#">Materiais</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+		<div class="parallax div1" data-divisor="6">
+			<div class="text">Olha o primeiro gatinho!!!</div>
+		</div>
+		<div class="parallax div2" data-divisor="6">
+			<div class="text">Olha o segundo gatinho!!!</div>
+		</div>
+		<div class="parallax div3" data-divisor="6">
+			
+			<div class="text">Olha o terceiro gatinho!!!</div>
+		</div>
+		<div class="parallax div4" data-divisor="6">	
+		<div class="text">Olha o quarto gatinho!!!</div>
+		</div>
+		<div class="parallax div6" data-divisor="6">	
+		<div class="text">Olha o quarto gatinho!!!</div>
+		</div>
+		<div class="parallax div5" data-divisor="6">	
+		<div class="text">Olha o sexto gatinho!!!</div>
+		</div>
+
+	</body>
+</html>
