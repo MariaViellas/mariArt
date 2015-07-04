@@ -59,13 +59,9 @@ html {
 	color: #fff;
 	font-size: 40px;
 	text-shadow: 2px 2px 0 #000;
-	position: absolute;
 	background-color: rgba(0,0,0,0.8);
-	padding: 20px;
-	line-height: 1.5;
-	width: 200px;
-	bottom: 100px;
-	left: 10%;
+	padding: 50px;
+	margin-top: 145px;
 }
 
 /* Configura os elementos "parallax" */
