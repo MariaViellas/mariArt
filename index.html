@@ -4,11 +4,11 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Efeito Parallax - Tutsup</title>
-		<link rel="stylesheet" href="css/lib/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/scripts.js"></script>
-		<script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		 <script>
 			$(function(){   
 			var nav = $('#menuHeader');   
 			$(window).scroll(function () { 
@@ -19,66 +19,50 @@
 				} 
 			});  
 		});
+		</script>	
+		<script>	
+			$(function() {
+                $('a').bind('click',function(event){
+                    var $anchor = $(this);
+        
+                  $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top}, 1000,'easeInOutExpo');
 		</script>
 	</head>
 	<body>
 		<nav id="menuHeader">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Minha hist&oacute;ria</a></li>
-				<li><a href="#">Desenhos</a></li>
-				<li><a href="#">Artesanatos</a></li>
-				<li><a href="#">Materiais</a></li>
-				<li><a href="#">Contato</a></li>
+				<li><a href="#div1">Home</a></li>
+				<li><a href="#div2">Minha hist&oacute;ria</a></li>
+				<li><a href="#div3">Desenhos</a></li>
+				<li><a href="#div4">Artesanatos</a></li>
+				<li><a href="#div5">Materiais</a></li>
+				<li><a href="#div6">Contato</a></li>
 			</ul>
 		</nav>
+      	<a name="div1"></a>
 		<div class="parallax div1" data-divisor="6">
-			<div class="container">
-				<div class="col-lg-6">
-					<div class="text">Olha o primeiro gatinho!!!</div>
-				</div>
-				<div class="col-lg-6"></div>
-			</div>
+			<div class="text">Olha o primeiro gatinho!!!</div>
 		</div>
+		<a name="div2"></a>
 		<div class="parallax div2" data-divisor="6">
-			<div class="container">
-				<div class="col-lg-6"></div>
-				<div class="col-lg-6">
-					<div class="text">Olha o segundo gatinho!!!</div>
-				</div>
-			</div>
+			<div class="text" style='margin-left:50%'>Olha o segundo gatinho!!!</div>
 		</div>
+		<a name="div3"></a>
 		<div class="parallax div3" data-divisor="6">
-			<div class="container">
-				<div class="col-lg-6">
-					<div class="text">Olha o terceiro gatinho!!!</div>
-				</div>
-				<div class="col-lg-6"></div>
-			</div>
+			<div class="text">Olha o terceiro gatinho!!!</div>
 		</div>
-		<div class="parallax div4" data-divisor="6">
-			<div class="container">
-				<div class="col-lg-6"></div>
-				<div class="col-lg-6">
-					<div class="text">Olha o quarto gatinho!!!</div>
-				</div>
-			</div>
+		<a name="div4"></a>
+		<div class="parallax div4" data-divisor="6">	
+		<div class="text" style='margin-left:50%'>Olha o quarto gatinho!!!</div>
 		</div>
-		<div class="parallax div6" data-divisor="6">
-			<div class="container">
-				<div class="col-lg-6">
-					<div class="text">Olha o quarto gatinho!!!</div>
-				</div>
-				<div class="col-lg-6"></div>
-			</div>
+		<a name="div5"></a>
+		<div class="parallax div5" data-divisor="6">	
+		<div class="text">Olha o quarto gatinho!!!</div>
 		</div>
-		<div class="parallax div5" data-divisor="6">
-			<div class="container">
-				<div class="col-lg-6"></div>
-				<div class="col-lg-6">
-					<div class="text">Olha o sexto gatinho!!!</div>
-				</div>
-			</div>
+		<a name="div6"></a>
+		<div class="parallax div6" data-divisor="6">	
+		<div class="text" style='margin-left:50%'>Olha o sexto gatinho!!!</div>
 		</div>
+
 	</body>
 </html>

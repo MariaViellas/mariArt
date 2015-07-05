@@ -59,9 +59,13 @@ html {
 	color: #fff;
 	font-size: 40px;
 	text-shadow: 2px 2px 0 #000;
+	position: absolute;
 	background-color: rgba(0,0,0,0.8);
-	padding: 50px;
-	margin-top: 145px;
+	padding: 90px;
+	line-height: 1.8;
+	width: 200px;
+	bottom: 100px;
+	left: 10%;
 }
 
 /* Configura os elementos "parallax" */
@@ -88,9 +92,9 @@ html {
 	background-image: url(../imagens/14.jpg);
 }
 .div5 {
-	background-image: url(../imagens/15.jpg);
+	background-image: url(../imagens/16.jpg);
 }
 .div6 {
-	background-image: url(../imagens/16.jpg);
+	background-image: url(../imagens/15.jpg);
 }
 
